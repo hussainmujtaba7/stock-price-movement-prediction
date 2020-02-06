@@ -1,6 +1,0 @@
-import pandas as pd
-Df=pd.read_csv("sampletweets.csv",usecols=['sentiment','text'])
-Df=Df.dropna()
-Df.loc[Df['sentiment'] == '|negative|','sentiment']=-1
-Df.loc[Df['sentiment'] == '|neutral|','sentiment']=0
-Df.loc[Df['sentiment'] == '|positive|','sentiment']=1
